@@ -1,0 +1,19 @@
+package pack1;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class WriteOperation {
+	public static void main(String[] args) {
+		try {
+			FileOutputStream fs = new FileOutputStream("E:\\Test\\copy.txt");
+			String s = "Shivam";
+			byte[] b = s.getBytes(s);
+			fs.write(b);
+			fs.close();
+			System.out.println("Success");
+		} catch (IOException ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
+}
