@@ -1,2 +1,7 @@
 1505808506368	Rename resource 'NewFile.jsp'
 1505808588714	Move 'index.jsp' to 'WEB-INF'
+1505810861171	Delete element
+1505888116843	Move 2 resources to 'webapp'
+1505888150523	Move 2 resources to 'views'
+1505888756845	Rename resource 'Header.jsp'
+1505973925697	Move 'resources' to 'webapp'

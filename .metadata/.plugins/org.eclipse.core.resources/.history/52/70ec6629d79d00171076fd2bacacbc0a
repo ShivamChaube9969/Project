@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc = "http://www.springframework.org/schema/mvc"
+	xmlns:context = "http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/beans/spring-mvc.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/beans/spring-context.xsd"
+	>
+	
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="controller"></context:component-scan>
+	<bean id = "viewRoslver" class ="org.springframework.web.servelet.view.InternalResourceViewResolver">
+	<property name="prefix">
+	<value>/WEB-INF/views/</value>
+	</property>
+	
+	
+	</bean>
+	<mvc:default-servelet-handler/>
+	
+	</beans>
